@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Airflow logs
+logs/
+*.log
+
+# Airflow SQLite DB (если используешь локально)
+airflow.db
+
+# Docker volumes / data (чтобы не пушить БД и csv-файлы)
+data/
+postgres_data/
+
+# .env файл с секретами
+.env
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.swp
