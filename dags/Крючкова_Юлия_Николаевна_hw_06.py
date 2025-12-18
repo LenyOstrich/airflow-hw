@@ -84,7 +84,7 @@ default_args = {
 with DAG(
     dag_id='Kruchkova_Yulia_N_hw_06',
     start_date=days_ago(1),
-    schedule_interval=None, # Запускаем вручную
+    schedule_interval='@daily',
     catchup=False,
     default_args=default_args
 ) as dag:
